@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -6,13 +8,12 @@ int main()
     cout<<"Enter no. of vertices: ";
     cin>>V;
     cout<<"Enter graph in matrix form:\n";
-    
     for(i=0;i<V;i++)
         for(j=0;j<V;j++)
         {
             cin>>G[i][j];
             if(G[i][j]!=0)
-            edge[k][0]=i,edge[k++][1]=j;
+                edge[k][0]=i,edge[k++][1]=j;
         }
 
     return 0;
