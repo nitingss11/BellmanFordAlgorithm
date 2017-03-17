@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+int Bellman_Ford(int G[20][20] , int V, int E, int edge[20][2])
+{
+    int flag=1;
+   
+    return flag;
+}
+
 int main()
 {
     int V,edge[20][2],G[20][20],i,j,k=0;
