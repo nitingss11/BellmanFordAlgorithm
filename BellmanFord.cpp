@@ -54,15 +54,15 @@ int main()
         }
     
     clock_t start;
-	double duration;
-	start = clock();
+    double duration;
+    start = clock();
     
     if(Bellman_Ford(G,V,k,edge))
         cout<<"\nNo negative weight cycle exists\n";
     else cout<<"\nNegative weight cycle exists\n";
 
     duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
-	cout<<"\nExecution Time: "<<duration <<" seconds"<<endl;
+    cout<<"\nExecution Time: "<<duration <<" seconds"<<endl;
 
 
     return 0;
