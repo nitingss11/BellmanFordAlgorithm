@@ -2,9 +2,9 @@
 #include<ctime>
 using namespace std;
 
-int Bellman_Ford(int G[500][500] , int V, int E, int edge[500][2])
+int Bellman_Ford(int G[100][100] , int V, int E, int edge[100][2])
 {
-    int i,u,v,k,distance[500],S,flag=1;
+    int i,u,v,k,distance[100],S,flag=1;
 
     for(i=0;i<V;i++)
         distance[i] = 1000 ;
@@ -40,7 +40,7 @@ int Bellman_Ford(int G[500][500] , int V, int E, int edge[500][2])
 
 int main()
 {
-    int V,edge[500][2],G[500][500],i,j,k=0;
+    int V,edge[100][2],G[100][100],i,j,k=0;
     cout<<"BELLMAN FORD\n";
     cout<<"Enter no. of vertices: ";
     cin>>V;
