@@ -1,4 +1,5 @@
 #include <iostream>
+#include<ctime>
 using namespace std;
 
 int Bellman_Ford(int G[500][500] , int V, int E, int edge[500][2])
@@ -51,10 +52,18 @@ int main()
             if(G[i][j]!=0)
                 edge[k][0]=i,edge[k++][1]=j;
         }
-
+    
+    clock_t start;
+	double duration;
+	start = clock();
+    
     if(Bellman_Ford(G,V,k,edge))
         cout<<"\nNo negative weight cycle exists\n";
     else cout<<"\nNegative weight cycle exists\n";
+
+    duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
+	cout<<"\nExecution Time: "<<duration <<" seconds"<<endl;
+
 
     return 0;
 }
