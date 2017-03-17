@@ -2,9 +2,18 @@
 int main()
 {
     int V,edge[20][2],G[20][20],i,j,k=0;
-    printf("BELLMAN FORD\n");
-    printf("Enter no. of vertices: ");
-    scanf("%d",&V);
+    cout<<"BELLMAN FORD\n";
+    cout<<"Enter no. of vertices: ";
+    cin>>V;
+    cout<<"Enter graph in matrix form:\n";
     
+    for(i=0;i<V;i++)
+        for(j=0;j<V;j++)
+        {
+            cin>>G[i][j];
+            if(G[i][j]!=0)
+            edge[k][0]=i,edge[k++][1]=j;
+        }
+
     return 0;
 }
