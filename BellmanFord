@@ -1,1 +1,10 @@
 
+int main()
+{
+    int V,edge[20][2],G[20][20],i,j,k=0;
+    printf("BELLMAN FORD\n");
+    printf("Enter no. of vertices: ");
+    scanf("%d",&V);
+    
+    return 0;
+}
